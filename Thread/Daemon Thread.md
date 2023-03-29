@@ -7,7 +7,7 @@
 ```
 
 `예제`
-```kotiln
+```kotlin
 class GoniThread(
 ):Thread(){
     override fun run() {
@@ -44,7 +44,7 @@ goniThreadDaemon.start()
 goniThreadDaemon.isDaemon = true    
 ```
 `Normal Thread 종료 시 Daemone Thread 종료 테스트`
-```kotiln
+```kotlin
 class GoniThread(
 ):Thread(){
     override fun run() {
