@@ -121,7 +121,8 @@ goniThread3 end
 ---
 ## ✍ Runnable 구현
 ```
-🚀 Runnable 인터페이스를 사용하여 run() 함수를 오버라이딩 할 수 있다. 인터페이스를 사용하기 때문에 꼭 run() 함수를 재정의 해주어야 한다. Thread() 클래스 인자로 Runnable 객체를 넣어주면된다.
+🚀 Runnable 인터페이스를 사용하여 run() 함수를 오버라이딩 할 수 있다. 인터페이스를 사용하기 때문에 꼭 run() 함수를 재정의 해주어야 한다. 
+Thread() 클래스 인자로 Runnable 객체를 넣어주면된다.
 ```
 ```kotlin
 class GoniRunnable: Runnable{
@@ -203,7 +204,8 @@ GoniThread syntax
 
 ```
 🚀isDaemon 은 무엇인가?
-코틀린 문서에서는 isDaemon = true 이면, 스레드는 데몬 스레드 로 만들어진다. 실행 중인 유일한 스레드가 모두 데몬 스레드인 경우 JVM 이 종료된다.
+코틀린 문서에서는 isDaemon = true 이면, 스레드는 데몬 스레드 로 만들어진다. 
+실행 중인 유일한 스레드가 모두 데몬 스레드인 경우 JVM 이 종료된다.
 ```
 ---
 ## 스레드 종료
@@ -254,7 +256,9 @@ GoniThread exit
 ### interrupt() 메서드 사용하기
 `Thread.interrupt()`
 ```
-🚀 interrupt() 를 사용하면 Thread 를 외부에서 안전하게 종료시킬 수 있다. 주의할 점은 강제종료 시키는 방법이 아닌 sleep() 메서드가 호출 시 InterruptedException 오류를 발생시켜 스레드를 종료하는 방법이다. 한마디로 run() 메서드 내에서 일시정지되는 이벤트가 발생해야 한다.
+🚀 interrupt() 를 사용하면 Thread 를 외부에서 안전하게 종료시킬 수 있다. 
+주의할 점은 강제종료 시키는 방법이 아닌 sleep() 메서드가 호출 시 InterruptedException 오류를 발생시켜 스레드를 종료하는 방법이다. 
+한마디로 run() 메서드 내에서 일시정지되는 이벤트가 발생해야 한다.
 ```
 ```kotlin
 class GoniThread(

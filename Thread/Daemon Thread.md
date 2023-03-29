@@ -1,7 +1,9 @@
 # Daemon Thread
 [참고 자료](https://medium.com/@lunay0ung/thread-daemon-thread-3b89ce606b04)
 ```
-🚀 스레드에는 Daemon Thread 와 Normal Thread 로 나뉜다. Daemon Thread 의 개념은 Normal Thread 의 작업을 돕는 보조적 역할을 담당하는 쓰레드이다. Daemon Thread 는 가비지 컬렉션, 요청 처리, 리소스 청소 와 같은 백그라운드 task 를 실행하며 낮은 우선순위 (low priority) 를 가지고 있다. 그리고 Normal Thread 가 종료되면 Daemon Thread 도 강제 종료된다.
+🚀 스레드에는 Daemon Thread 와 Normal Thread 로 나뉜다. Daemon Thread 의 개념은 Normal Thread 의 작업을 돕는 보조적 역할을 
+담당하는 쓰레드이다. Daemon Thread 는 가비지 컬렉션, 요청 처리, 리소스 청소 와 같은 백그라운드 task 를 실행하며 낮은 우선순위 (low priority) 
+를 가지고 있다. 그리고 Normal Thread 가 종료되면 Daemon Thread 도 강제 종료된다.
 ```
 
 `예제`
